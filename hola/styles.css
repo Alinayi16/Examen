@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #1111b4;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.search-container, .show-all-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input, button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+#search-input {
+    width: 300px;
+    background-color: #f9f9f9;
+}
+
+#search-btn, #show-all-btn {
+    padding: 15px 30px;
+    background-color: #00c3ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover, #show-all-btn:hover {
+    background-color: #007bff;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #00c3ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #007bff;
+}

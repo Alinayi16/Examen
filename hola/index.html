@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipl Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Pipl Search</h1>
+    
+    <div class="search-container">
+        <select id="search-category">
+            <option value="email">Correo Electrónico</option>
+            <option value="name">Nombre</option>
+            <option value="location">Ubicación</option>
+            <option value="phone">Teléfono</option>
+        </select>
+        <input type="text" id="search-input" placeholder="Buscar...">
+        <button id="search-btn">Buscar</button>
+    </div>
+
+    <div class="show-all-container">
+        <button id="show-all-btn">Mostrar Todas las Cards</button>
+    </div>
+
+    <div class="cards-container" id="cards-container"></div>
+
+    <div class="pagination">
+        <button id="prev-btn" disabled>Anterior</button>
+        <button id="next-btn">Siguiente</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
